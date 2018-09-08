@@ -4,6 +4,7 @@ I have uploaded, alongside this write-up: a Makefile, three test files, and my m
 them, copy those five items to the same directory and enter into terminal:
 
 make
+
 sudo insmod jif.ko
 sudo insmod test1.ko
 sudo insmod test2.ko
