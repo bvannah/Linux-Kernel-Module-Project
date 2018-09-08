@@ -3,17 +3,17 @@ A project for a class
 I have uploaded, alongside this write-up: a Makefile, three test files, and my main module. To use
 them, copy those five items to the same directory and enter into terminal:
 
-make
-
-sudo insmod jif.ko
-sudo insmod test1.ko
-sudo insmod test2.ko
-sudo insmod test3.ko
+  make
+  sudo insmod jif.ko
+  sudo insmod test1.ko
+  sudo insmod test2.ko
+  sudo insmod test3.ko
 
 This will initialize the database and store it in /proc/jif, making changes to it based on the add/delete
 function calls in test1, test2, and test3 modules. If you don’t want to use all three test modules, you can
 just load in the first one and make changes as you wish, and then see the results in:
-cat /proc/jif
+
+  cat /proc/jif
 
 TL;DR: Does some /proc/ stuff. 10 lines of 64 bytes each, one key-val per line, first
 line is the number of entries.
